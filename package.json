@@ -1,0 +1,22 @@
+{
+	
+	"name": "giffo-config",
+	"version": "0.0.1",
+	"description": "giffo's config method for node.js",
+	"author": "giffo <github@giffo.org>",
+	"main": "config.js",
+		
+	"repository": {
+		"type":"git",
+		"url":"https://github.com/giffo/config"
+	},
+	
+	"bugs": {
+		"url": "https://github.com/giffo/config/issues" 
+	},
+	
+	"keywords": [
+		"giffo-config", "config"
+	],
+	"license": "MIT"
+}
