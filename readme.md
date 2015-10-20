@@ -46,7 +46,7 @@ or a more traditional presentable/verbose method (not writing require("giffo-con
 	var favColor = appConfig("favcolor");
 	var serverTimeouts = serverConfig("timeout");
 
-*this is a read only, there is no mechanism to save changes to the config file to disk.*
+*this module a read only, there is no mechanism to save changes to the config file to disk.* 
 
 
 number, boolean and array data-types are converted from the string to their relevant type. putting quotes around a value does not convert.
