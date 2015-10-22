@@ -2,9 +2,6 @@ var config = require("../config.js")("config-test-file.conf");
 
 
 
-
-
-
 //console.log(config("session.redis.password"));
 
 //console.log(config("session"));

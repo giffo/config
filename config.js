@@ -1,9 +1,17 @@
+/* Copyright (c) 2015 Giffo. All rights reserved.*/
+
 var fs = require("fs");
 
 //TODO: verify config file exists
 
+
+
 var ConfigFile = module.exports = function(filename) {
-	var name = filename; ; // test for .conf?
+	var name = filename + (filename.endsWith(".conf")?"":".conf"); // test for .conf?
+	
+	
+	
+	
 	
 	// TODO:
 	// check for filename,
@@ -32,7 +40,6 @@ var ConfigFile = module.exports = function(filename) {
 			// this doesn't even need to be done as any illegal name "//key" or "#key" will just fail silently
 			// however i feel compelled to actually write this code to not process the comment lines
 			if(lines[i].indexOf("//") == 0 || lines[i].indexOf("#") == 0) {
-				
 				continue;
 			}
 						
