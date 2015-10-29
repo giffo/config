@@ -1,10 +1,6 @@
-/* Copyright (c) 2015 Giffo. All rights reserved.*/
-
 var fs = require("fs");
 
 //TODO: verify config file exists
-
-
 
 var ConfigFile = module.exports = function(filename) {
 	var name = filename + (filename.endsWith(".conf")?"":".conf"); // test for .conf?
