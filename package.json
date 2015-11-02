@@ -1,7 +1,7 @@
 {
 	
 	"name": "giffo-config",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "giffo's config method for node.js",
 	"author": "giffo <github@giffo.org>",
 	"main": "config.js",

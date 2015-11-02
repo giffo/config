@@ -1,20 +1,26 @@
 var fs = require("fs");
+var path = require("path");
 
 //TODO: verify config file exists
 
 var ConfigFile = module.exports = function(filename) {
 	var name = filename + (filename.endsWith(".conf")?"":".conf"); // test for .conf?
 	
-	
-	
-	
-	
-	// TODO:
-	// check for filename,
-	// check for .conf files in directory in process.cwd(); ?? should be done externally?
-	// resolve to cwd() etc if not absolute
-	
 	var obj = {};
+	
+	
+	// if filename is not a path resolve to process.cwd()
+	// check the file exists
+	
+	
+	if(!path.isAbsolute(filename)) {
+		filename = path.resolve(process.cwd(), filename);		
+	}
+	
+	if(!fs.statSync(filename).isFile())
+		return {}; // file not found, return an empty
+	
+	
 	
 		
 	// omg blocking, i expect configs are loaded at startup, not going to spent anytime thinking about async atm
